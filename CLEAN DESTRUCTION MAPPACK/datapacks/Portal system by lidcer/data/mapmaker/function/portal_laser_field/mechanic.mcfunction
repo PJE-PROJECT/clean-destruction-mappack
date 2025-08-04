@@ -14,6 +14,5 @@ execute if entity @s[tag=active,tag=!AlwaysActive] at @s unless block ^ ^1 ^2 mi
 
 
 
-execute as @e[type=minecraft:item_display,tag=laser_field] positioned as @s if entity @a[tag=test_subject,distance=..2,limit=1] run function mapmaker:portal_laser_field/check
 
-
+execute positioned as @a[tag=test_subject,limit=1] as @e[type=minecraft:item_display,tag=laser_field,distance=..1] positioned as @s run function mapmaker:portal_laser_field/check

@@ -22,6 +22,7 @@ tag @s remove spawner_setup
 tag @s remove material_emancipation_grill_1_setup
 tag @s remove material_emancipation_grill_2_setup
 tag @s remove laser_field_setup
+tag @s remove death_field_setup
 tag @s remove portalcam_1_setup
 tag @s remove portalcam_2_setup
 tag @s remove portal_spawner_1_setup

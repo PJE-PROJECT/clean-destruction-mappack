@@ -30,6 +30,12 @@ execute if entity @a[tag=laser_field_setup,limit=1] run function mapmaker:portal
 execute as @e[type=minecraft:armor_stand,distance=..40,tag=laser_field_door,sort=random] at @s run function mapmaker:portal_laser_field/mechanic
 
 
+# DEATH FIELD
+execute if entity @a[tag=death_field_setup,limit=1] run function mapmaker:portal_death_field/death_field
+execute as @e[type=minecraft:armor_stand,distance=..40,tag=death_field_door,sort=random] at @s run function mapmaker:portal_death_field/mechanic
+
+
+
 #ELEVATOR
 execute if entity @a[tag=elevator_setup,limit=1] run function mapmaker:portal_elevator/elevator
 
