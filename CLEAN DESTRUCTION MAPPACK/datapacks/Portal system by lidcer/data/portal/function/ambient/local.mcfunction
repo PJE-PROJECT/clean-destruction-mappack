@@ -21,3 +21,10 @@ scoreboard players add @s[tag=funnel_emitter,tag=active,scores={ambient_local=1.
 execute if entity @s[tag=funnel_emitter,tag=active,scores={ambient_local=0}] if entity @a[distance=..15,limit=1] run scoreboard players add @s ambient_local 1
 execute if entity @s[tag=funnel_emitter,tag=active,scores={ambient_local=70..}] run scoreboard players set @s ambient_local 0
 execute if entity @s[tag=funnel_emitter,tag=active] if score @s ambient_local matches 1 run playsound minecraft:tbeam_emitter_spin_lp_01 ambient @a ~ ~ ~ 0.1 1 0
+
+
+#DELIVERY TUBES
+scoreboard players add @s[tag=delivery_tubes_ambient,scores={ambient_local=1..220}] ambient_local 1
+execute if entity @s[tag=delivery_tubes_ambient,scores={ambient_local=0}] if entity @a[distance=..15,limit=1] run scoreboard players add @s ambient_local 1
+execute if entity @s[tag=delivery_tubes_ambient,scores={ambient_local=85..}] run scoreboard players set @s ambient_local 0
+execute if entity @s[tag=delivery_tubes_ambient] if score @s ambient_local matches 1 run playsound minecraft:delivery_tubes_lp_01 ambient @a ~ ~ ~ 0.2 1 0

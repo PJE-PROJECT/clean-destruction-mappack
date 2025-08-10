@@ -28,3 +28,8 @@ item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:neth
 item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":321}}}] container.0 with blue_stained_glass[custom_model_data=17]
 item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":322}}}] container.0 with blue_stained_glass[custom_model_data=18]
 item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":323}}}] container.0 with blue_stained_glass[custom_model_data=19]
+
+
+item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":169}}}] container.0 with blue_stained_glass[custom_model_data=169]
+item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":170}}}] container.0 with blue_stained_glass[custom_model_data=170]
+item replace entity @e[type=minecraft:item_display,nbt={item:{id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":171}}}] container.0 with blue_stained_glass[custom_model_data=171]
