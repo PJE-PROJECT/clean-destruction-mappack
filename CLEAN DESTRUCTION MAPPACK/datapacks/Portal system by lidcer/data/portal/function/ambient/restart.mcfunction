@@ -28,6 +28,14 @@ scoreboard players set sp_a2_paints_ch2_a1 ambient_global 0
 scoreboard players set sp_a2_fling_intro_a0 ambient_global 0
 scoreboard players set sp_a3_vactube_lumber_a0 ambient_global 0
 scoreboard players set amb_destroyed_elevator_lp_02 ambient_global 0
+
+
+scoreboard players set sp_a3_faith_plate ambient_global 0
+scoreboard players set sp_a3_concepts ambient_global 0
+scoreboard players set sp_a3_transition ambient_global 0
+scoreboard players set sp_a3_paint_fling ambient_global 0
+scoreboard players set doublevision ambient_global 0
+
 scoreboard players set amb_birds ambient_global 0
 scoreboard players set player_enter_tbeam_lp_01_looped ambient_global 0
 scoreboard players set amb_crow ambient_global 0

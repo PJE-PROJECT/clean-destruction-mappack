@@ -1,6 +1,6 @@
 tag @s add activated
 setblock ~ ~ ~ minecraft:redstone_block
-setblock ~ ~2 ~ minecraft:snow[layers=2]
+execute unless block ~ ~2 ~ dark_oak_slab run setblock ~ ~2 ~ minecraft:snow[layers=2]
 
 item replace entity @s[tag=!wrecked_style_1,tag=!wrecked_style_2,tag=!cube_only] armor.head with minecraft:diamond_hoe[minecraft:damage=1462,minecraft:unbreakable={}]
 item replace entity @s[tag=wrecked_style_2,tag=!wrecked_style_1,tag=!cube_only] armor.head with minecraft:netherite_shovel[minecraft:custom_model_data=49,minecraft:unbreakable={}]

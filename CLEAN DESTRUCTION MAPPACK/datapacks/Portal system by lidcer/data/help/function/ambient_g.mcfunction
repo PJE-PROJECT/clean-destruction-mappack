@@ -90,10 +90,40 @@ execute if entity @s[tag=!sp_a3_vactube_lumber_a0] run tellraw @s ["    ",{"text
 
 
 
-
-
 execute if entity @s[tag=amb_destroyed_elevator_lp_02] run tellraw @s ["    ",{"text":"[amb_destroyed_elevator_lp_02]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove amb_destroyed_elevator_lp_02"},"type":"text"}]
 execute if entity @s[tag=!amb_destroyed_elevator_lp_02] run tellraw @s ["    ",{"text":"[amb_destroyed_elevator_lp_02]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add amb_destroyed_elevator_lp_02"},"type":"text"}]
+
+tellraw @s {"text":"","type":"text"}
+tellraw @s ["    ",{"text":"Portal Stories: Mel OST","color":"yellow"}]
+tellraw @s {"text":"","type":"text"}
+
+
+execute if entity @s[tag=sp_a3_faith_plate] run tellraw @s ["    ",{"text":"[sp_a3_faith_plate]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a3_faith_plate"},"type":"text"}]
+execute if entity @s[tag=!sp_a3_faith_plate] run tellraw @s ["    ",{"text":"[sp_a3_faith_plate]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a3_faith_plate"},"type":"text"}]
+
+
+execute if entity @s[tag=sp_a3_concepts] run tellraw @s ["    ",{"text":"[sp_a3_concepts]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a3_concepts"},"type":"text"}]
+execute if entity @s[tag=!sp_a3_concepts] run tellraw @s ["    ",{"text":"[sp_a3_concepts]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a3_concepts"},"type":"text"}]
+
+
+execute if entity @s[tag=sp_a3_transition] run tellraw @s ["    ",{"text":"[sp_a3_transition]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a3_transition"},"type":"text"}]
+execute if entity @s[tag=!sp_a3_transition] run tellraw @s ["    ",{"text":"[sp_a3_transition]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a3_transition"},"type":"text"}]
+
+
+execute if entity @s[tag=sp_a3_paint_fling] run tellraw @s ["    ",{"text":"[sp_a3_paint_fling]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a3_paint_fling"},"type":"text"}]
+execute if entity @s[tag=!sp_a3_paint_fling] run tellraw @s ["    ",{"text":"[sp_a3_paint_fling]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a3_paint_fling"},"type":"text"}]
+
+
+execute if entity @s[tag=doublevision] run tellraw @s ["    ",{"text":"[doublevision]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove doublevision"},"type":"text"}]
+execute if entity @s[tag=!doublevision] run tellraw @s ["    ",{"text":"[doublevision]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add doublevision"},"type":"text"}]
+
+
+
+
+
+tellraw @s {"text":"","type":"text"}
+tellraw @s {"text":"","type":"text"}
+tellraw @s ["    ",{"text":"[add delivery tubes ambient (LOCAL)]","color":"gray","clickEvent":{"action":"run_command","value":"/summon minecraft:item_display ~ ~ ~ {Tags:['delivery_tubes_ambient','al']}"},"type":"text"}]
 
 
 tellraw @s {"text":"","type":"text"}

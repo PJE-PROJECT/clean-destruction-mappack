@@ -35,6 +35,15 @@ execute if entity @s[tag=sp_a3_vactube_lumber_a0] run tag @e[type=minecraft:mark
 
 
 execute if entity @s[tag=amb_destroyed_elevator_lp_02] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add amb_destroyed_elevator_lp_02
+execute if entity @s[tag=sp_a3_faith_plate] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a3_faith_plate
+execute if entity @s[tag=sp_a3_concepts] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a3_concepts
+execute if entity @s[tag=sp_a3_transition] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a3_transition
+execute if entity @s[tag=sp_a3_paint_fling] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a3_paint_fling
+execute if entity @s[tag=doublevision] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add doublevision
+
+
+
+
 execute if entity @s[tag=amb_birds] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add amb_birds
 
 execute if entity @s[tag=decay] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add decay

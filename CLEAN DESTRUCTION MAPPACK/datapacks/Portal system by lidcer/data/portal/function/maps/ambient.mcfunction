@@ -29,8 +29,12 @@ execute if entity @s[tag=sp_a2_paints_ch2_a1] run tag @a[limit=1] add sp_a2_pain
 execute if entity @s[tag=sp_a2_fling_intro_a0] run tag @a[limit=1] add sp_a2_fling_intro_a0
 execute if entity @s[tag=sp_a3_vactube_lumber_a0] run tag @a[limit=1] add sp_a3_vactube_lumber_a0
 execute if entity @s[tag=amb_destroyed_elevator_lp_02] run tag @a[limit=1] add amb_destroyed_elevator_lp_02
+execute if entity @s[tag=sp_a3_faith_plate] run tag @a[limit=1] add sp_a3_faith_plate
+execute if entity @s[tag=sp_a3_concepts] run tag @a[limit=1] add sp_a3_concepts
+execute if entity @s[tag=sp_a3_transition] run tag @a[limit=1] add sp_a3_transition
+execute if entity @s[tag=sp_a3_paint_fling] run tag @a[limit=1] add sp_a3_paint_fling
+execute if entity @s[tag=doublevision] run tag @a[limit=1] add doublevision
 execute if entity @s[tag=amb_birds] run tag @a[limit=1] add amb_birds
-
 execute if entity @s[tag=amb_crow] run tag @a[limit=1] add amb_crow
 execute if entity @s[tag=amb_waterdrips] run tag @a[limit=1] add amb_waterdrips
 execute if entity @s[tag=amb_insects_lp] run tag @a[limit=1] add amb_insects_lp

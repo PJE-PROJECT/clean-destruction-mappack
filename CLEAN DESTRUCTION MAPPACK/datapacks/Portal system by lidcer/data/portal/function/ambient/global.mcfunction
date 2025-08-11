@@ -17,7 +17,6 @@ execute if entity @s[tag=!sp_intro_01_08_chamberexit] run scoreboard players set
 execute if entity @s[tag=!amb_crow] run scoreboard players set amb_crow ambient_global 0
 execute if entity @s[tag=!amb_waterdrips] run scoreboard players set amb_waterdrips ambient_global 0
 execute if entity @s[tag=!amb_insects_lp] run scoreboard players set amb_insects_lp ambient_global 0
-
 execute if entity @s[tag=!decay] run scoreboard players set decay ambient_global 0
 execute if entity @s[tag=!sp_intro_02_lb1-1] run scoreboard players set sp_intro_02_lb1-1 ambient_global 0
 execute if entity @s[tag=!sp_intro_02_lx1-1] run scoreboard players set sp_intro_02_lx1-1 ambient_global 0
@@ -33,6 +32,11 @@ execute if entity @s[tag=!sp_a2_paints_ch2_a1] run scoreboard players set sp_a2_
 execute if entity @s[tag=!sp_a2_fling_intro_a0] run scoreboard players set sp_a2_fling_intro_a0 ambient_global 0
 execute if entity @s[tag=!sp_a3_vactube_lumber_a0] run scoreboard players set sp_a3_vactube_lumber_a0 ambient_global 0
 execute if entity @s[tag=!amb_destroyed_elevator_lp_02] run scoreboard players set amb_destroyed_elevator_lp_02 ambient_global 0
+execute if entity @s[tag=!sp_a3_faith_plate] run scoreboard players set sp_a3_faith_plate ambient_global 0
+execute if entity @s[tag=!sp_a3_concepts] run scoreboard players set sp_a3_concepts ambient_global 0
+execute if entity @s[tag=!sp_a3_transition] run scoreboard players set sp_a3_transition ambient_global 0
+execute if entity @s[tag=!sp_a3_paint_fling] run scoreboard players set sp_a3_paint_fling ambient_global 0
+execute if entity @s[tag=!doublevision] run scoreboard players set doublevision ambient_global 0
 execute if entity @s[tag=!amb_birds] run scoreboard players set amb_birds ambient_global 0
 execute if entity @s[tag=!player_enter_tbeam_lp_01_looped] run scoreboard players set player_enter_tbeam_lp_01_looped ambient_global 0
 
@@ -61,6 +65,11 @@ execute if entity @s[tag=!sp_a2_paints_ch2_a1] run stopsound @s ambient minecraf
 execute if entity @s[tag=!sp_a2_fling_intro_a0] run stopsound @s ambient minecraft:sp_a2_fling_intro_a0
 execute if entity @s[tag=!sp_a3_vactube_lumber_a0] run stopsound @s ambient minecraft:sp_a3_vactube_lumber_a0
 execute if entity @s[tag=!amb_destroyed_elevator_lp_02] run stopsound @s ambient minecraft:amb_destroyed_elevator_lp_02
+execute if entity @s[tag=!sp_a3_faith_plate] run stopsound @s ambient minecraft:sp_a3_faith_plate
+execute if entity @s[tag=!sp_a3_concepts] run stopsound @s ambient minecraft:sp_a3_concepts
+execute if entity @s[tag=!sp_a3_transition] run stopsound @s ambient minecraft:sp_a3_transition
+execute if entity @s[tag=!sp_a3_paint_fling] run stopsound @s ambient minecraft:sp_a3_paint_fling
+execute if entity @s[tag=!doublevision] run stopsound @s ambient minecraft:doublevision
 execute if entity @s[tag=!amb_birds] run stopsound @s ambient minecraft:amb_birds
 execute if entity @s[tag=!player_enter_tbeam_lp_01_looped] run stopsound @s ambient minecraft:player_enter_tbeam_lp_01_looped
 execute if entity @s[tag=!decay] run stopsound @s ambient minecraft:decay
@@ -110,6 +119,11 @@ execute if entity @s[tag=sp_a2_paints_ch2_a1] run scoreboard players add sp_a2_p
 execute if entity @s[tag=sp_a2_fling_intro_a0] run scoreboard players add sp_a2_fling_intro_a0 ambient_global 1
 execute if entity @s[tag=sp_a3_vactube_lumber_a0] run scoreboard players add sp_a3_vactube_lumber_a0 ambient_global 1
 execute if entity @s[tag=amb_destroyed_elevator_lp_02] run scoreboard players add amb_destroyed_elevator_lp_02 ambient_global 1
+execute if entity @s[tag=sp_a3_faith_plate] run scoreboard players add sp_a3_faith_plate ambient_global 1
+execute if entity @s[tag=sp_a3_concepts] run scoreboard players add sp_a3_concepts ambient_global 1
+execute if entity @s[tag=sp_a3_transition] run scoreboard players add sp_a3_transition ambient_global 1
+execute if entity @s[tag=sp_a3_paint_fling] run scoreboard players add sp_a3_paint_fling ambient_global 1
+execute if entity @s[tag=doublevision] run scoreboard players add doublevision ambient_global 1
 execute if entity @s[tag=amb_birds] run scoreboard players add amb_birds ambient_global 1
 execute if entity @s[tag=player_enter_tbeam_lp_01_looped] run scoreboard players add player_enter_tbeam_lp_01_looped ambient_global 1
 
@@ -149,6 +163,13 @@ execute if score sp_a2_paints_ch2_a1 ambient_global matches 1 run playsound mine
 execute if score sp_a2_fling_intro_a0 ambient_global matches 1 run playsound minecraft:sp_a2_fling_intro_a0 ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score sp_a3_vactube_lumber_a0 ambient_global matches 1 run playsound minecraft:sp_a3_vactube_lumber_a0 ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score amb_destroyed_elevator_lp_02 ambient_global matches 1 run playsound minecraft:amb_destroyed_elevator_lp_02 ambient @a ~ ~ ~ 0.3 1 0.3
+
+execute if score sp_a3_faith_plate ambient_global matches 1 run playsound minecraft:sp_a3_faith_plate ambient @a ~ ~ ~ 0.1 1 0.1
+execute if score sp_a3_concepts ambient_global matches 1 run playsound minecraft:sp_a3_concepts ambient @a ~ ~ ~ 0.1 1 0.1
+execute if score sp_a3_transition ambient_global matches 1 run playsound minecraft:sp_a3_transition ambient @a ~ ~ ~ 0.1 1 0.1
+execute if score sp_a3_paint_fling ambient_global matches 1 run playsound minecraft:sp_a3_paint_fling ambient @a ~ ~ ~ 0.1 1 0.1
+execute if score doublevision ambient_global matches 1 run playsound minecraft:doublevision ambient @a ~ ~ ~ 0.1 1 0.1
+
 execute if score amb_birds ambient_global matches 1 run playsound minecraft:amb_birds ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score player_enter_tbeam_lp_01_looped ambient_global matches 1 run playsound minecraft:player_enter_tbeam_lp_01_looped ambient @a ~ ~ ~ 0.8 1 0.8
 
@@ -180,10 +201,13 @@ execute if score sp_a2_paints_ch2_a1 ambient_global matches 5360.. run scoreboar
 execute if score sp_a2_fling_intro_a0 ambient_global matches 4800.. run scoreboard players set sp_a2_fling_intro_a0 ambient_global 0
 execute if score sp_a3_vactube_lumber_a0 ambient_global matches 1700.. run scoreboard players set sp_a3_vactube_lumber_a0 ambient_global 0
 execute if score amb_destroyed_elevator_lp_02 ambient_global matches 240.. run scoreboard players set amb_destroyed_elevator_lp_02 ambient_global 0
+execute if score sp_a3_faith_plate ambient_global matches 1920.. run scoreboard players set sp_a3_faith_plate ambient_global 0
+execute if score sp_a3_concepts ambient_global matches 2560.. run scoreboard players set sp_a3_concepts ambient_global 0
+execute if score sp_a3_transition ambient_global matches 2040.. run scoreboard players set sp_a3_transition ambient_global 0
+execute if score sp_a3_paint_fling ambient_global matches 3060.. run scoreboard players set sp_a3_paint_fling ambient_global 0
+execute if score doublevision ambient_global matches 1940.. run scoreboard players set doublevision ambient_global 0
 execute if score amb_birds ambient_global matches 300.. run scoreboard players set amb_birds ambient_global 0
 execute if score player_enter_tbeam_lp_01_looped ambient_global matches 130.. run scoreboard players set player_enter_tbeam_lp_01_looped ambient_global 0
-
-
 execute if score decay ambient_global matches 2160.. run scoreboard players set decay ambient_global 0
 execute if score sp_intro_02_lb1-1 ambient_global matches 180.. run scoreboard players set sp_intro_02_lb1-1 ambient_global 0
 execute if score sp_intro_02_lx1-1 ambient_global matches 180.. run scoreboard players set sp_intro_02_lx1-1 ambient_global 0

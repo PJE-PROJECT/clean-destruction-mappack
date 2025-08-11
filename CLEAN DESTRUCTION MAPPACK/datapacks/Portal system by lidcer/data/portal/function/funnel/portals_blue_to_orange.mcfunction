@@ -6,4 +6,4 @@ execute if score @s funnel_portals_delay matches 0 at @e[tag=sbpg.portal_second,
 execute if score @s funnel_portals_delay matches 0 if entity @s[type=slime,tag=funnel_r] run playsound minecraft:portal_enter_2 ambient @a ~ ~ ~ 0.1 1 0.1
 execute if score @s funnel_portals_delay matches 0 if entity @s[type=slime,tag=funnel_r] run playsound minecraft:portal_exit_2 ambient @a ~ ~ ~ 0.1 1 0.1
 
-scoreboard players set @s funnel_portals_delay 1
+execute if score @s funnel_portals_delay matches 0 run scoreboard players set @s funnel_portals_delay 1
