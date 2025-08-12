@@ -9,7 +9,7 @@ tag @e[type=minecraft:item_display,tag=laser_receptacle_glass,tag=active,tag=!us
 #CAMERA
 execute if entity @a[tag=portalcam_1_setup,limit=1] run function mapmaker:portal_camera/portalcamera
 execute if entity @a[tag=portalcam_2_setup,limit=1] run function mapmaker:portal_camera/portalcamera
-execute if entity @e[distance=..40,tag=cam,limit=1] run function mapmaker:portal_camera/portalcamera-mechanic
+execute as @e[type=item_display,distance=..40,tag=cam,tag=!destroyed] at @s run function mapmaker:portal_camera/portalcamera-mechanic
 
 #CUBE
 execute if entity @a[tag=cube_setup,limit=1] run function mapmaker:portal_cube/cube

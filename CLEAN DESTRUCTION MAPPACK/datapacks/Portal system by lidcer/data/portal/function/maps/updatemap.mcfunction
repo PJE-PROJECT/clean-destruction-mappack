@@ -41,8 +41,16 @@ tag @e[tag=custom_trigger,tag=activated] remove activated
 execute as @e[type=minecraft:item_display,tag=vertdoor,tag=broken,tag=saved] at @s run function mapmaker:portal_vertdoor/reset_partial
 execute as @e[type=minecraft:item_display,tag=vertdoor,tag=auto,tag=saved,tag=!broken] at @s run function mapmaker:portal_vertdoor/reset_partial
 
+#CAMERAS
+item replace entity @e[type=item_display,tag=portalcam_head_2] container.0 with diamond_hoe[minecraft:damage=1508,minecraft:unbreakable={}]
+item replace entity @e[type=item_display,tag=portalcam_base_2] container.0 with diamond_hoe[minecraft:damage=1509,minecraft:unbreakable={}]
 
+item replace entity @e[type=item_display,tag=portalcam_head_1] container.0 with netherite_shovel[custom_model_data=18]
+item replace entity @e[type=item_display,tag=portalcam_base_1] container.0 with netherite_shovel[custom_model_data=17]
+tag @e[tag=cam,tag=destroyed] remove destroyed
+tag @e[tag=cam,tag=unmount] remove unmount
 
+#ARM64
 tag @e[type=minecraft:item_display,tag=arm64,tag=error,tag=arm_anim] remove arm_anim
 tag @e[type=minecraft:item_display,tag=arm64,tag=headbut,tag=arm_anim] remove arm_anim
 
