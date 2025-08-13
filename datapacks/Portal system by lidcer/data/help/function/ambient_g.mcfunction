@@ -121,13 +121,10 @@ execute if entity @s[tag=!doublevision] run tellraw @s ["    ",{"text":"[doublev
 
 
 
-tellraw @s {"text":"","type":"text"}
-tellraw @s {"text":"","type":"text"}
-tellraw @s ["    ",{"text":"[add delivery tubes ambient (LOCAL)]","color":"gray","clickEvent":{"action":"run_command","value":"/summon minecraft:item_display ~ ~ ~ {Tags:['delivery_tubes_ambient','al']}"},"type":"text"}]
 
 
 tellraw @s {"text":"","type":"text"}
 tellraw @s ["    ",{"text":"[REFRESH]","color":"green","clickEvent":{"action":"run_command","value":"/function help:ambient_g"},"type":"text"},"    ",{"text":"ADD TO MAP: ","italic":true,"type":"text"},{"text":"[-] ","clickEvent":{"action":"run_command","value":"/scoreboard players remove setmap ambient_global 1"},"type":"text"},{"score":{"name":"setmap","objective":"ambient_global"},"type":"score"},{"text":" [+]","clickEvent":{"action":"run_command","value":"/scoreboard players add setmap ambient_global 1"},"type":"text"},"  ",{"text":"[ADD]","color":"green","clickEvent":{"action":"run_command","value":"/function help:setmap"},"type":"text"}]
 tellraw @s {"text":"","type":"text"}
-tellraw @s ["",{"text":"Page: ","italic":true,"type":"text"},{"text":"[Global]","bold":true,"clickEvent":{"action":"run_command","value":"/function help:ambient_g"},"type":"text"},{"text":" ","bold":true,"type":"text"},{"text":"[Music]","color":"gray","clickEvent":{"action":"run_command","value":"/function help:ambient_m"},"type":"text"},{"text":" ","bold":true,"type":"text"},{"text":"[Local]","color":"gray","clickEvent":{"action":"run_command","value":"/function help:ambient_l"},"type":"text"}]
+tellraw @s ["",{"text":"Page: ","italic":true,"type":"text"},{"text":"[Global]","bold":true,"clickEvent":{"action":"run_command","value":"/function help:ambient_g"},"type":"text"},{"text":" ","bold":true,"type":"text"},{"text":"[Local]","color":"gray","clickEvent":{"action":"run_command","value":"/function help:ambient_l"},"type":"text"}]
 tellraw @s {"text":"","type":"text"}

@@ -19,6 +19,8 @@ execute if score pause timer matches 1.. run return 0
 execute if entity @a[tag=itempicker_activated,tag=!pickoff_block,limit=1,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}},Slot:-106b}]}] run tag @e[tag=prop,tag=hovering,tag=hovering_motion,limit=1] remove hovering
 execute as @e[tag=prop,tag=hovering,tag=hovering_motion] run function portal:tick_hovering
 
+# AMBIENT ICONS
+execute as @e[tag=ambient.sound.icon] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~90
 
 # MOTION BLUR
 execute positioned as @a[limit=1] if score motion_blur config matches 1 unless entity @e[tag=motion_blur,limit=1] run summon minecraft:item_display ~ ~ ~ {Tags:["motion_blur"],item:{id:"minecraft:red_stained_glass",components:{"minecraft:custom_model_data":11},Count:1b}}
