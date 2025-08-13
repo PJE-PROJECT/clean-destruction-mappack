@@ -1,7 +1,7 @@
 
 execute if entity @s[tag=lookingatyou,tag=!pco] facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
-execute if entity @s[tag=portalcam_base] if block ^ ^0.5 ^-1 minecraft:air run kill @e[distance=..0.2,tag=cam]
+execute if entity @s[tag=portalcam_base] if block ^ ^0.5 ^-1 minecraft:air run kill @e[distance=..0.3,tag=cam]
 
 execute if entity @s[tag=cam,tag=N] positioned ~ ~ ~ if entity @e[distance=..0.9,tag=sbpg.portal,tag=sbpg.active,tag=south] run tag @e[distance=..0.2,tag=cam] add unmount
 execute if entity @s[tag=cam,tag=S] positioned ~ ~ ~ if entity @e[distance=..0.9,tag=sbpg.portal,tag=sbpg.active,tag=north] run tag @e[distance=..0.2,tag=cam] add unmount

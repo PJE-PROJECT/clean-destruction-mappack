@@ -43,11 +43,11 @@ execute as @a[tag=portalcam_2_setup,scores={portalgun=1..},nbt={SelectedItem:{id
 
 
 
-execute as @e[type=minecraft:armor_stand,tag=portalcam_set,tag=cam1] at @s positioned ~ ~0.1 ~ unless entity @e[distance=..0.8,tag=portalcam_side] run summon item_display ^ ^ ^ {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":18,"minecraft:unbreakable":{}},count:1},Tags:["portalcam_head","portalcam_head_1","lookingatyou","pco","cam"],teleport_duration:5}
+execute as @e[type=minecraft:armor_stand,tag=portalcam_set,tag=cam1] at @s positioned ~ ~0.1 ~ unless entity @e[distance=..0.8,tag=portalcam_side] run summon item_display ^ ^ ^-0.1 {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":18,"minecraft:unbreakable":{}},count:1},Tags:["portalcam_head","portalcam_head_1","lookingatyou","pco","cam"],teleport_duration:5}
 execute as @e[type=minecraft:armor_stand,tag=portalcam_set,tag=cam1] at @s positioned ~ ~0.1 ~ unless entity @e[distance=..0.8,tag=portalcam_base] run summon item_display ^ ^ ^0.1 {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":17,"minecraft:unbreakable":{}},count:1},Tags:["portalcam_base","portalcam_base_1","pco","cam"]}
 
 
-execute as @e[type=minecraft:armor_stand,tag=portalcam_set,tag=cam2] at @s positioned ~ ~0.1 ~ unless entity @e[distance=..0.8,tag=portalcam_side] run summon item_display ^ ^ ^ {item:{id:"minecraft:diamond_hoe",components:{"minecraft:damage":1508,"minecraft:unbreakable":{}},count:1},Tags:["portalcam_head","portalcam_head_2","lookingatyou","pco","cam"],teleport_duration:5}
+execute as @e[type=minecraft:armor_stand,tag=portalcam_set,tag=cam2] at @s positioned ~ ~0.1 ~ unless entity @e[distance=..0.8,tag=portalcam_side] run summon item_display ^ ^ ^-0.1 {item:{id:"minecraft:diamond_hoe",components:{"minecraft:damage":1508,"minecraft:unbreakable":{}},count:1},Tags:["portalcam_head","portalcam_head_2","lookingatyou","pco","cam"],teleport_duration:5}
 execute as @e[type=minecraft:armor_stand,tag=portalcam_set,tag=cam2] at @s positioned ~ ~0.1 ~ unless entity @e[distance=..0.8,tag=portalcam_base] run summon item_display ^ ^ ^0.1 {item:{id:"minecraft:diamond_hoe",components:{"minecraft:damage":1509,"minecraft:unbreakable":{}},count:1},Tags:["portalcam_base","portalcam_base_2","pco","cam"]}
 
 
