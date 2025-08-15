@@ -68,4 +68,4 @@ execute at @e[tag=elevator_miniature,tag=departure_rusted2,y_rotation=90] positi
 playsound minecraft:block.iron_door.open ambient @a ~ ~ ~ 1 1.6
 tag @s remove elevator_set
 function mapmaker:tagremove
-schedule function mapmaker:portal_elevator/elevator_cullings 10s append
+schedule function mapmaker:portal_elevator/elevator_cullings 5s append

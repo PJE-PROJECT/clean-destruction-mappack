@@ -137,7 +137,7 @@ execute if score sp_a1_intro3_b1 ambient_global matches 1 run playsound minecraf
 execute if score sp_a1_intro5_b1 ambient_global matches 1 run playsound minecraft:sp_a1_intro5_b1 ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score sp_a1_intro6 ambient_global matches 1 run playsound minecraft:sp_a1_intro6 ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score sp_a2_trust_fling_r1 ambient_global matches 1 run playsound minecraft:sp_a2_trust_fling_r1 ambient @a ~ ~ ~ 0.1 1 0.1
-execute if score sp_a2_pit_flings ambient_global matches 1 run playsound minecraft:sp_a2_pit_flings ambient @a ~ ~ ~ 0.2 1 0.2
+execute if score sp_a2_pit_flings ambient_global matches 1 run playsound minecraft:sp_a2_pit_flings ambient @a ~ ~ ~ 0.1 1 0.1
 execute if score sp_a3_01_b2 ambient_global matches 1 run playsound minecraft:sp_a3_01_b2 ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score sp_a1_wakeup_b1 ambient_global matches 1 run playsound minecraft:sp_a1_wakeup_b1 ambient @a ~ ~ ~ 0.3 1 0.3
 execute if score sp_a1_wakeup_b2 ambient_global matches 1 run playsound minecraft:sp_a1_wakeup_b2 ambient @a ~ ~ ~ 0.2 1 0.2

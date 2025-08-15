@@ -11,7 +11,7 @@ execute if entity @s[tag=sbpg.portal_main] if score @s ambient_local matches 1 r
 
 #ELEVATOR AMBIENT
 scoreboard players add @s[tag=elevator_ambient,scores={ambient_local=1..220}] ambient_local 1
-execute if entity @s[tag=elevator_ambient,scores={ambient_local=0}] if entity @a[distance=..9,limit=1] run scoreboard players add @s ambient_local 1
+execute if entity @s[tag=elevator_ambient,scores={ambient_local=0}] if entity @a[distance=..15,limit=1] run scoreboard players add @s ambient_local 1
 execute if entity @s[tag=elevator_ambient,scores={ambient_local=220..}] run scoreboard players set @s ambient_local 0
 execute if entity @s[tag=elevator_ambient] if score @s ambient_local matches 1 run playsound minecraft:amb_industrial_medium_lp_01 ambient @a ~ ~ ~ 0.7 1 0
 
@@ -25,6 +25,6 @@ execute if entity @s[tag=funnel_emitter,tag=active] if score @s ambient_local ma
 
 #DELIVERY TUBES
 scoreboard players add @s[tag=delivery_tubes_ambient,scores={ambient_local=1..220}] ambient_local 1
-execute if entity @s[tag=delivery_tubes_ambient,scores={ambient_local=0}] if entity @a[distance=..15,limit=1] run scoreboard players add @s ambient_local 1
+execute if entity @s[tag=delivery_tubes_ambient,scores={ambient_local=0}] if entity @a[distance=..18,limit=1] run scoreboard players add @s ambient_local 1
 execute if entity @s[tag=delivery_tubes_ambient,scores={ambient_local=85..}] run scoreboard players set @s ambient_local 0
 execute if entity @s[tag=delivery_tubes_ambient] if score @s ambient_local matches 1 run playsound minecraft:delivery_tubes_lp_01 ambient @a ~ ~ ~ 0.2 1 0
