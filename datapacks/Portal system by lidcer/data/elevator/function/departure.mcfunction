@@ -1,4 +1,5 @@
 execute if score elevator_departure time matches 1.. run scoreboard players add elevator_departure time 1
+
 execute if score elevator_departure time matches 3 as @e[type=minecraft:item_display,distance=..5,tag=elevator_vactube,limit=1] at @s run tp @s ~ ~-3.45 ~
 execute if score elevator_departure time matches 3 run playsound minecraft:elevator_tube_open_01 ambient @a ~ ~ ~ 0.3 1 0.3
 
